@@ -1,94 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Professional Image Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<title>Professional Image Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>Professional Image Gallery</h1>
-
-<div class="filters">
-    <button class="active" data-filter="all">All</button>
-    <button data-filter="nature">Nature</button>
-    <button data-filter="animals">Animals</button>
-    <button data-filter="city">City</button>
-    <button data-filter="technology">Technology</button>
-</div>
-
-<div class="gallery">
-
-    <!-- NATURE (Updated with your code) -->
-    <div class="gallery-item nature">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop" alt="Mountain Landscape">
-    </div>
-
-    <div class="gallery-item nature">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=400&fit=crop" alt="Forest">
-    </div>
-
-    <div class="gallery-item nature">
-        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&h=400&fit=crop" alt="Lake View">
-    </div>
-
-    <div class="gallery-item nature">
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="Green Hills">
-    </div>
-
-    <div class="gallery-item nature">
-        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&h=400&fit=crop" alt="Waterfall">
-    </div>
-
-    <!-- ANIMALS (unchanged) -->
-    <div class="gallery-item animals"><img src="https://picsum.photos/id/237/600/400"></div>
-    <div class="gallery-item animals"><img src="https://picsum.photos/id/433/600/400"></div>
-    <div class="gallery-item animals"><img src="https://picsum.photos/id/593/600/400"></div>
-    <div class="gallery-item animals"><img src="https://picsum.photos/id/659/600/400"></div>
-    <div class="gallery-item animals"><img src="https://picsum.photos/id/718/600/400"></div>
-
-    <!-- CITY (Updated with your code) -->
-    <div class="gallery-item city">
-        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&h=400&fit=crop">
-    </div>
-
-    <div class="gallery-item city">
-        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=600&h=400&fit=crop">
-    </div>
-
-    <div class="gallery-item city">
-        <img src="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=600&h=400&fit=crop">
-    </div>
-
-    <div class="gallery-item city">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=600&h=400&fit=crop">
-    </div>
-
-    <div class="gallery-item city">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=400&fit=crop">
-    </div>
-
-    <!-- TECHNOLOGY (unchanged) -->
-    <div class="gallery-item technology"><img src="https://picsum.photos/id/180/600/400"></div>
-    <div class="gallery-item technology"><img src="https://picsum.photos/id/201/600/400"></div>
-    <div class="gallery-item technology"><img src="https://picsum.photos/id/250/600/400"></div>
-    <div class="gallery-item technology"><img src="https://picsum.photos/id/365/600/400"></div>
-    <div class="gallery-item technology"><img src="https://picsum.photos/id/403/600/400"></div>
-
-</div>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-    <span class="close">&times;</span>
-    <button class="nav prev">&#10094;</button>
-    <img id="lightbox-img">
-    <button class="nav next">&#10095;</button>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<style>
 * {
     margin: 0;
     padding: 0;
@@ -150,7 +67,6 @@ h1 {
 }
 
 /* Lightbox */
-
 .lightbox {
     display: none;
     position: fixed;
@@ -194,6 +110,81 @@ h1 {
         height: 160px;
     }
 }
+</style>
+</head>
+
+<body>
+
+<h1>Professional Image Gallery</h1>
+
+<div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="animals">Animals</button>
+    <button data-filter="city">City</button>
+    <button data-filter="technology">Technology</button>
+</div>
+
+<div class="gallery">
+
+    <!-- NATURE -->
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item nature">
+        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&h=400&fit=crop">
+    </div>
+
+    <!-- ANIMALS -->
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/237/600/400"></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/433/600/400"></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/593/600/400"></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/659/600/400"></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/718/600/400"></div>
+
+    <!-- CITY -->
+    <div class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=600&h=400&fit=crop">
+    </div>
+    <div class="gallery-item city">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=400&fit=crop">
+    </div>
+
+    <!-- TECHNOLOGY -->
+    <div class="gallery-item technology"><img src="https://picsum.photos/id/180/600/400"></div>
+    <div class="gallery-item technology"><img src="https://picsum.photos/id/201/600/400"></div>
+    <div class="gallery-item technology"><img src="https://picsum.photos/id/250/600/400"></div>
+    <div class="gallery-item technology"><img src="https://picsum.photos/id/365/600/400"></div>
+    <div class="gallery-item technology"><img src="https://picsum.photos/id/403/600/400"></div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <button class="nav prev">&#10094;</button>
+    <img id="lightbox-img">
+    <button class="nav next">&#10095;</button>
+</div>
+
+<script>
 document.addEventListener("DOMContentLoaded", () => {
 
     const filterButtons = document.querySelectorAll(".filters button");
@@ -209,7 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentIndex = 0;
     let visibleItems = [...items];
 
-    // Filter
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
 
@@ -230,7 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Open Lightbox
     images.forEach(img => {
         img.addEventListener("click", () => {
             currentIndex = visibleItems.findIndex(item =>
@@ -241,20 +230,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Close
     closeBtn.onclick = () => lightbox.style.display = "none";
     lightbox.onclick = (e) => {
         if (e.target === lightbox) lightbox.style.display = "none";
     };
 
-    // Next
     nextBtn.onclick = () => {
         currentIndex = (currentIndex + 1) % visibleItems.length;
         lightboxImg.src =
             visibleItems[currentIndex].querySelector("img").src;
     };
 
-    // Prev
     prevBtn.onclick = () => {
         currentIndex =
             (currentIndex - 1 + visibleItems.length) % visibleItems.length;
@@ -263,3 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
 });
+</script>
+
+</body>
+</html>
